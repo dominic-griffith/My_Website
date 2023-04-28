@@ -1,0 +1,24 @@
+body {
+    font-family: Roboto, Arial;
+    color: white;
+    margin: 0;
+    background-color: rgb(23, 23, 23);
+    padding-top: 55px;
+}
+p {
+    font-size: 15px;
+    margin: 0;
+}
+button {
+    font-family: Roboto, Arial;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
