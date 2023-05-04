@@ -1,24 +1,23 @@
 body {
-    font-family: Roboto, Arial;
+    font-family: Open Sans, Arial;
     color: white;
     margin: 0;
-    background-color: rgb(23, 23, 23);
-    padding-top: 55px;
+    background-image: url("../images/background.png");
+    padding-top: 104px;
 }
 p {
-    font-size: 15px;
+    font-size: 14px;
     margin: 0;
 }
 button {
-    font-family: Roboto, Arial;
-    color: white;
+    font-family: Open Sans, Arial;
+    color: #b8b6b4;
 
     border: none;
-    border-radius: 10px;
     background-color: transparent;
-    transition: background-color 0.3s;
+    transition: color 0.3s;
 }
 button:hover {
-    background-color: lightgray;
+    color: #ffffff;
     cursor: pointer;
 }
