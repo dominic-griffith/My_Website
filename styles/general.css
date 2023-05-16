@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-image: url("../images/background.png");
     padding-top: 104px;
+    justify-content: center;
 }
 p {
     font-size: 14px;

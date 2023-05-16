@@ -4,7 +4,7 @@
     <!-- Meta Information-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="HTML, CSS" />
+    <meta name="keywords" content="HTML, CSS, JS" />
     <meta name="description" content="My portfolio" />
 
     <title>Dominic Griffith Protfolio</title>
@@ -23,50 +23,50 @@
   <body>
     <header>
       <h1 class="my-name">DOMINIC GRIFFITH</h1>
-      <h2 class="options">
-        <button>
-          ABOUT
-        </button>
-        <button>
-          GAME PROJECTS
-        </button>
-        <button>
-          CODE PROJECTS
-        </button>
-        <button>
-          CONTACT ME
-        </button>
-      </h2>
+      <div class="options">
+        <button>ABOUT</button>
+        <button>GAMES</button>
+        <button>PROJECTS</button>
+        <button>CONTACT</button>
+      </div>
     </header>
+
     <main>
 
+
       <div class="about-section">
-        <h3 class="about-title">About</h3>
+        <h2 class="about-title">About</h2>
         <p class="about-text"> 
-          Hello! I'm Dominic, but most people call me Dom. I am a programmer originally from northern california, now 
-          living in souther california. I recently graduated magna cum laude in computer science from San Diego State
-          University, with a minor in mathematics.
+          Hello! I'm Dominic, but most people call me Dom. I am a programmer originally from northern california, now living in southern california. I recently graduated magna cum laude in computer science from San Diego State University, with a minor in mathematics.
         </p>
         <p class="about-text">
-          On my website you will be able find my personal and school projects. . . 
+          On my website you will be able find games I have collaborated on as well as and school projects. . . 
         </p>
       </div>
 
-      <div class="game-projects-section">
-        <div class="game-projects-content">
-          <h3 class="game-projects-title">Game Projects</h3>
-          <div class="game-preview-whole">
-            <div class="game-preview-rotating">
-              <div class="game-picture-row">
-                <img class="preview-image" src="images/Ascension.png" alt="">
-              </div>
-              <div class="game-info">
-                <p class="game-title">
-                  Ascension
-                </p>
-                <p class="game-text">
-                  game text
-                </p>
+
+      <div class="games-section">
+        <div class="games-content">
+          <h2 class="games-title">Games</h2>
+          <div class="game-carousel">
+            <div class="game-carousel-preview">
+              <div class="game-item">
+                <div class="game-picture">
+                  <img class="preview-image" src="images/Ascension.png" alt="">
+                </div>
+                <div class="game-info">
+                  <p class="game-title">Ascension</p>
+                  <div class="game-screenshot-container">
+                    <div class="screenshot-1-container"><img class="game-screenshot" src="images/ascension-screenshot-1.png" alt=""><img class="tooltip" src="images/ascension-screenshot-1.png" alt=""></div>
+                    <div class="screenshot-2-container"><img class="game-screenshot" src="images/ascension-screenshot-2.png" alt=""><img class="tooltip" src="images/ascension-screenshot-2.png" alt=""></div>
+                    <div class="screenshot-3-container"><img class="game-screenshot" src="images/ascension-screenshot-3.png" alt="">
+                    <img class="tooltip" src="images/ascension-screenshot-3.png" alt=""></div>
+                    <div class="screenshot-4-container"><img class="game-screenshot" src="images/ascension-screenshot-4.png" alt=""><img class="tooltip" src="images/ascension-screenshot-4.png" alt=""></div>
+                  </div>
+                  <p class="game-text">game text</p>
+                  <a href="https://dominic-griffith.itch.io/ascension" target="_blank"><img class="game-logos" src="images/itchio-logo.svg" alt="itchio logo"></a>
+                  <a href="https://github.com/dominic-griffith/ScoreSpaceJam23" target="_blank"><img class="game-logos" src="images/github-logo.svg" alt="github logo"></a>
+                </div>
               </div>
             </div>
             <div class="game-carousel-thumbs">
@@ -86,14 +86,41 @@
         
       </div>
 
-      <div class="code-projects-section">
 
+      <div class="projects-section">
+        <div class="projects-content">
+          <h2 class="projects-title">Projects</h2>
+        </div>
       </div>
       
+
       <div class="contact-section">
-        <h3 class="contact-title">Contact Me</h3>
-        <a class="contact-text" href="mailto:dominicgriffith15@gmail.com?Subject=Hello!" target="_blank">dominicgriffith15@gmail.com</a>
+        <h2 class="contact-title">Contact</h2>
+        <div class="contact-content">
+          <a href="mailto:dominicgriffith15@gmail.com?Subject=Hello!" target="_blank"><img class="logos" src="images/mail-logo.svg" alt="mail logo"></a>
+          <a href="https://www.linkedin.com/in/dominicgriffith/" target="_blank"><img class="logos" src="images/linkedin-logo.svg" alt="linkedin logo"></a>
+          <a href="https://github.com/dominic-griffith" target="_blank"><img class="logos" src="images/github-logo.svg" alt="github logo"></a>
+          <a href="https://dominic-griffith.itch.io/" target="_blank"><img class="logos" src="images/itchio-logo.svg" alt="itchio logo"></a>
+        </div>
+        
       </div>
+
+      
     </main>
+
+
+    <script>
+      const gameCarouselThumbs = document.querySelector('.game-carousel-thumbs');
+      const emptyDivs = Array.from(gameCarouselThumbs.querySelectorAll('div'));
+      let currentFocusIndex = 0;
+
+      function rotateFocus() {
+        emptyDivs[currentFocusIndex].classList.remove('focus');
+        currentFocusIndex = (currentFocusIndex + 1) % emptyDivs.length;
+        emptyDivs[currentFocusIndex].classList.add('focus');
+      }
+      
+      setInterval(rotateFocus, 5000); //in ms
+    </script>
   </body>
 </html>
