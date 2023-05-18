@@ -1,0 +1,187 @@
+/* Game Display */
+.games-content {
+  position: relative;
+  padding: 0 234px;
+  width: 940px;
+  margin: 0 auto;
+}
+.game-carousel {
+  position: relative;
+  height: 380px;
+  margin-top: 5px;
+}
+.game-carousel-preview {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  height: 353px;
+  background-color: #171a21;
+  box-shadow: 0 0 7px 0px #000;
+}
+.game-carousel-preview div.game-item {
+  opacity: 0;
+  top: 0;
+  left: 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: inherit;
+  transition: opacity 400ms;
+}
+.game-carousel-preview div.game-item-focus {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: inherit;
+}
+.game-picture {
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  width: 616px;
+  height: 353px;
+  display: flex;
+  justify-content: center;
+}
+.preview-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 353px;
+  margin-right: 10px;
+  box-shadow: 0 0 10px 5px #000;
+}
+.game-info {
+  flex-shrink: 1;
+}
+.game-screenshots {
+  position: relative;
+  margin-left: -30px;
+  width: 344;
+  max-height: 215px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.screenshot-container {
+  width: 162px;
+  height: 69px;
+}
+.game-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.tooltip {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
+
+  position: absolute;
+  background-color: gray;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+.screenshot-container:hover .tooltip {
+  opacity: 1;
+}
+
+.tags {
+  margin-top: 10px;
+  height: 23px;
+  overflow: hidden;
+}
+
+.relative-links {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.game-logos {
+  width: 25px;
+  height: auto;
+  padding: 5px 0;
+  margin-right: 5px;
+  opacity: 0.6;
+  transition: all 0.2s ease-in-out;
+}
+.game-logos:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.game-title {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+
+/* Arrow Buttons */
+.game-arrow-left {
+  position: absolute;
+  width: 23px;
+  height: 36px;
+  padding: 36px 11px;
+  cursor: pointer;
+  top: 122px;
+  left: -46px;
+  background: linear-gradient(to right, rgba(0,0,0,0.3) 5%, rgba(0,0,0,0) 95%);
+}
+.game-arrow-left:hover {
+  background: linear-gradient(to right, rgba(171,218,244,0.3) 5%, rgba(171,218,244,0) 95%);
+}
+.game-arrow-left div {
+  background-position-x: 23px;
+  background-image: url(../images/arrows.png);
+  width: 23px;
+  height: 36px;
+}
+.game-arrow-right {
+  position: absolute;
+  width: 23px;
+  height: 36px;
+  padding: 36px 11px;
+  cursor: pointer;
+  top: 122px;
+  right: -46px;
+  background: linear-gradient(to right, rgba(0,0,0,0) 5%, rgba(0,0,0,0.3) 95%);
+}
+.game-arrow-right:hover {
+  background: linear-gradient(to right, rgba(171,218,244,0) 5%, rgba(171,218,244,0.3) 95%);
+}
+.game-arrow-right div {
+  background-image: url(../images/arrows.png);
+  width: 23px;
+  height: 36px;
+}
+
+
+/* Thumbs */
+.game-carousel-thumbs {
+  text-align: center;
+  min-height: 37px;
+  padding-bottom: 4px;
+}
+.game-carousel-thumbs div {
+  display: inline-block;
+  margin: 12px 2px;
+  width: 15px;
+  height: 9px;
+  border-radius: 2px;
+  background-color: hsla(202, 60%, 100%, 0.2);
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+.game-carousel-thumbs div.focus {
+  background-color: hsla(202, 60%, 100%, 0.4);
+}

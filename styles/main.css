@@ -3,20 +3,20 @@
 .contact-section,
 .games-section,
 .projects-section {
-  padding: 20px 20px;
+  position: relative;
+  padding: 20px 2%;
+  overflow: hidden;
+  margin: 0;
 }
-.about-section,
+/*.about-section,
 .games-section,
 .projects-section {
-  max-width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  margin: 0 auto;
+} */
 .contact-section {
   background-color: #171a21;
   bottom: 0;
 }
-
 
 /* Titles & Text */
 .about-title,
@@ -29,165 +29,12 @@
   letter-spacing: 0.03em;
   font-weight: normal;
   text-align: center;
-
   margin: 0 0 10px;
   padding-top: 2px;
 }
 .about-text {
   color: #fff;
-  padding: 0px 100px;
-}
-
-
-/* Game Display */
-.games-content {
-  position: relative;
-  width: 940px;
-  margin: 0 auto;
-}
-.game-carousel {
-  height: 380px;
-  margin-top: 5px;
-}
-.game-carousel-preview {
-  height: 353px;
-  background-image: url("../images/background_info.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: cover;
-
-  box-shadow: 0 0 7px 0px #000;
-}
-.game-item {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: inherit;
-}
-.game-picture {
-  display: flex;
-  justify-content: center;
-}
-.preview-image {
-  height: 100%;
-  width: auto;
-  max-height: 353px;
-  margin-right: 10px;
-
-  box-shadow: 0 0 10px 5px #000;
-}
-.game-screenshot-container {
-  width: 400px;
-  height: 215px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100px 100px;
-  gap: 10px;
-}
-.game-screenshot {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.tooltip {
-  width: 400px;
-  height: auto;
-  object-fit: cover;
-
-  position: absolute;
-  background-color: gray;
-  z-index: 1;
-  opacity: 0;
-  transition: opacity 0.15s;
-  pointer-events: none;
-}
-.screenshot-1-container:hover .tooltip,
-.screenshot-2-container:hover .tooltip,
-.screenshot-3-container:hover .tooltip,
-.screenshot-4-container:hover .tooltip {
-  opacity: 1;
-}
-.game-logos {
-  width: 25px;
-  height: auto;
-  padding: 5px 0;
-  margin-right: 5px;
-
-  opacity: 0.6;
-  transition: all 0.2s ease-in-out;
-}
-.game-logos:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-.game-title {
-  display: block;
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-
-
-/* Game Carousel Thumbs */
-.game-carousel-thumbs {
-  text-align: center;
-  min-height: 37px;
-  padding-bottom: 4px;
-}
-.game-carousel-thumbs div {
-  display: inline-block;
-  margin: 12px 2px;
-  width: 15px;
-  height: 9px;
-  border-radius: 2px;
-  background-color: hsla(202, 60%, 100%, 0.2);
-  transition: background-color 0.2s;
-  cursor: pointer;
-}
-.game-carousel-thumbs div.focus {
-  background-color: hsla(202, 60%, 100%, 0.4);
-}
-
-/* Game Arrow Buttons */
-.game-arrow-left {
-  position: absolute;
-  width: 23px;
-  height: 36px;
-  padding: 36px 11px;
-  cursor: pointer;
-
-  top: 122px;
-  left: -46px;
-  background: linear-gradient(to right, rgba(0,0,0,0.3) 5%, rgba(0,0,0,0) 95%);
-}
-.game-arrow-left:hover {
-  background: linear-gradient(to right, rgba(171,218,244,0.3) 5%, rgba(171,218,244,0) 95%);
-}
-.game-arrow-left div {
-  background-position-x: 23px;
-  background-image: url(../images/arrows.png);
-  width: 23px;
-  height: 36px;
-}
-.game-arrow-right {
-  position: absolute;
-  width: 23px;
-  height: 36px;
-  padding: 36px 11px;
-  cursor: pointer;
-
-  top: 122px;
-  right: -46px;
-  background: linear-gradient(to right, rgba(0,0,0,0) 5%, rgba(0,0,0,0.3) 95%);
-}
-.game-arrow-right:hover {
-  background: linear-gradient(to right, rgba(171,218,244,0) 5%, rgba(171,218,244,0.3) 95%);
-}
-.game-arrow-right div {
-  background-image: url(../images/arrows.png);
-  width: 23px;
-  height: 36px;
+  padding: 0px 450px;
 }
 
 
