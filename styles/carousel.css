@@ -26,7 +26,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: inherit;
-  transition: opacity 400ms;
 }
 .game-carousel-preview div.game-item-focus {
   opacity: 1;
@@ -80,7 +79,7 @@
 }
 
 .tags {
-  margin-top: 10px;
+  margin-top: 8px;
   height: 23px;
   overflow: hidden;
 }
@@ -106,13 +105,16 @@
 .game-title {
   display: block;
   margin-top: 10px;
+  margin-left: 10px;
   font-size: 18px;
   font-weight: 500;
   line-height: 20px;
   margin-bottom: 10px;
 }
 .game-text {
-  display:block;
+  display: block;
+  margin: 10px 10px 0 5px;
+  line-height: 18px;
 }
 
 /* Arrow Buttons */
@@ -173,4 +175,20 @@
 }
 .game-carousel-thumbs div.focus {
   background-color: hsla(202, 60%, 100%, 0.4);
+}
+
+.tag {
+  display: inline-block;
+  line-height: 19px;
+  padding: 0 7px;
+  background-color: rgba( 255, 255, 255, 0.2 );
+  box-shadow: none;
+  margin-right: 2px;
+  border-radius: 2px;
+  margin-bottom: 3px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 11px;
 }

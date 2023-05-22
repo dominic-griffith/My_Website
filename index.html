@@ -25,28 +25,30 @@
     <header>
       <h1 class="my-name">DOMINIC GRIFFITH</h1>
       <div class="options">
-        <button>ABOUT</button>
-        <button>GAMES</button>
-        <button>PROJECTS</button>
-        <button>CONTACT</button>
+        <button onclick="scrollToSection('about')">ABOUT</button>
+        <button onclick="scrollToSection('games')">GAMES</button>
+        <button onclick="scrollToSection('projects')">PROJECTS</button>
+        <button onclick="scrollToSection('contact')">CONTACT</button>
       </div>
     </header>
 
     <main>
 
-
-      <div class="about-section">
+      <div id="about" class="about-section">
         <h2 class="about-title">About</h2>
-        <p class="about-text"> 
-          Hello! I'm Dominic, but most people call me Dom. I am a programmer originally from northern california, now living in southern california. I recently graduated magna cum laude in computer science from San Diego State University, with a minor in mathematics. Some of my hobbies include walking my dog, playing video games and snowboarding.
+        <p class="about-text">
+          Hello! I'm Dominic, but most people call me Dom. I am a programmer based in <span class="highlight">Southern California</span>, originally from Northern California. I recently graduated <span class="highlight">magna cum laude</span> in Computer Science from San Diego State University, with a minor in Mathematics. Some of my hobbies include walking my dog, playing video games, and snowboarding.
         </p>
         <p class="about-text">
-          On my website you will be able find games I have collaborated on as well as and school projects and programs. . . 
+          Explore my website and delve into the world of my creations! Here, you will discover my passion for <span class="highlight">game development</span> and my dedication to creating <span class="highlight">immersive experiences</span>. I have collaborated on various games, showcasing my ability to bring ideas to life</span> and engage players. With a strong foundation in computer science principles, I have expertise in multiple programming languages, including <span class="highlight">C</span>, <span class="highlight">C++</span>, <span class="highlight">C#</span>, <span class="highlight">Java</span>, and <span class="highlight">Python</span>. From solving intricate programming challenges to crafting captivating gameplay, I enjoy every aspect of the development process.
+        </p>
+        <p class="about-text">
+          Thank you for visiting my website. I invite you to explore my projects and connect with me for <span class="highlight">collaboration opportunities</span> or <span class="highlight">inquiries</span>. I look forward to connecting with fellow developers and creating amazing experiences together.
         </p>
       </div>
 
 
-      <div class="games-section">
+      <div id="games" class="games-section">
         <div class="games-content">
           <h2 class="games-title">Games</h2>
           <div class="game-carousel" onmouseover="stopRotation()" onmouseout="startRotation()">
@@ -77,11 +79,11 @@
                     </div>
 
                   </div>
-                  <p class="game-text">game text</p>
+                  <p class="game-text">You are lost in the mountains with nothing but a grapple and some rope. Make your way to the peak as quickly as possible to search for a way out before it gets too dark.</p>
                   <div class="tags">
-                    <span>C#</span>
-                    <span>Unity</span>
-                    <span>Git</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">Unity</span>
+                    <span class="tag">Git</span>
                   </div>
                   <div class="relative-links">
                     <a href="https://dominic-griffith.itch.io/ascension" target="_blank"><img class="game-logos" src="images/itchio-logo.svg" alt="itchio logo"></a>
@@ -115,10 +117,10 @@
                     </div>
 
                   </div>
-                  <p class="game-text">game text</p>
+                  <p class="game-text">X marks the spot! Get the O and X to collide in the least amount of clicks possible.</p>
                   <div class="tags">
-                    <span>C#</span>
-                    <span>Unity</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">Unity</span>
                   </div>
                   <div class="relative-links">
                     <a href="https://dominic-griffith.itch.io/connected" target="_blank"><img class="game-logos" src="images/itchio-logo.svg" alt="itchio logo"></a>
@@ -151,11 +153,11 @@
                     </div>
 
                   </div>
-                  <p class="game-text">game text</p>
+                  <p class="game-text">Shinchi, a broke businessman, gets duped into taking a shady job for money. His new employers claim that he's a perfect fit for the role!</p>
                   <div class="tags">
-                    <span>C#</span>
-                    <span>Unity</span>
-                    <span>Git</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">Unity</span>
+                    <span class="tag">Git</span>
                   </div>
                   <div class="relative-links">
                     <a href="https://dominic-griffith.itch.io/perfect-fit" target="_blank"><img class="game-logos" src="images/itchio-logo.svg" alt="itchio logo"></a>
@@ -189,11 +191,11 @@
                     </div>
 
                   </div>
-                  <p class="game-text">game text</p>
+                  <p class="game-text">You are a plague doctor treating ill patients during the plague. Suddenly, the king decrees that a portion of the city - and all of its inhabitants, be destroyed. As a simple doctor, your only goal is to escape the putrid city.</p>
                   <div class="tags">
-                    <span>C#</span>
-                    <span>Unity</span>
-                    <span>Git</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">Unity</span>
+                    <span class="tag">Git</span>
                   </div>
                   <div class="relative-links">
                     <a href="https://aztec-game-lab.itch.io/pestilence" target="_blank"><img class="game-logos" src="images/itchio-logo.svg" alt="itchio logo"></a>
@@ -227,11 +229,11 @@
                     </div>
 
                   </div>
-                  <p class="game-text">game text</p>
+                  <p class="game-text">Fight your way through waves of enemies while swapping between Alt-Space and M-Space. Once swapped, you are immune to everything happening in the alternate dimension. Make your way through the cold unforgiving vacuum of space.</p>
                   <div class="tags">
-                    <span>C#</span>
-                    <span>Unity</span>
-                    <span>Git</span>
+                    <span class="tag">C#</span>
+                    <span class="tag">Unity</span>
+                    <span class="tag">Git</span>
                   </div>
                   <div class="relative-links">
                     <a href="https://grahamsanders.itch.io/crossfire-alt-space" target="_blank"><img class="game-logos" src="images/itchio-logo.svg" alt="itchio logo"></a>
@@ -260,7 +262,7 @@
       </div>
 
 
-      <div class="projects-section">
+      <div id="projects" class="projects-section">
         <div class="projects-content">
           <h2 class="projects-title">Projects</h2>
           <div class="project-grid">
@@ -269,13 +271,17 @@
               <div class="project-image-container">
                 <img class="project-image" src="images/project-pgc.gif" alt="">
               </div>
+              <div class="project-hover"></div>
               <div class="project-info">
                 <p class="project-title">Procedurally Generated Mesh</p>
-                <span class="project-tag">C#</span>
-                <span class="project-tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">Unity</span>
+                <div class="relative-links">
+                  <a href="https://github.com/dominic-griffith/CS_596_S22_Griffith_Dominic_PROJ_01" target="_blank"><img class="game-logos" src="images/github-logo.svg" alt="github logo"></a>
+                </div>
               </div>
               <div class="project-about">
-                <p></p>
+                <p>This scene generates a fully formed mesh with accurate normals and a suitable collider. The vertices of the mesh are dynamically updated using a combination of Perlin noise and a cosine function.</p>
               </div>
             </div>
 
@@ -283,27 +289,35 @@
               <div class="project-image-container">
                 <img class="project-image" src="images/project-boids.gif" alt="">
               </div>
+              <div class="project-hover"></div>
               <div class="project-info">
                 <p class="project-title">Boids</p>
-                <span class="project-tag">C#</span>
-                <span class="project-tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">Unity</span>
+                <div class="relative-links">
+                  <a href="https://github.com/dominic-griffith/CS_596_S22_Griffith_Dominic_PROJ_03" target="_blank"><img class="game-logos" src="images/github-logo.svg" alt="github logo"></a>
+                </div>
               </div>
               <div class="project-about">
-                <p></p>
+                <p>A fully functional 3D simulation which implements a GUI that allows for three different flocking behaviors. One behavior selects a random point as a destination, continually updating it once the point is reached. Another follows a predefined shape, in this case a circle. The last one has the flock follow a leader.</p>
               </div>
             </div>
 
             <div class="project">
               <div class="project-image-container">
-                <img class="project-image quest" src="images/project-quest-system.jpg" alt="">
+                <img class="project-image screenshot-code" src="images/project-fishy-finder.gif" alt="">
               </div>
+              <div class="project-hover"></div>
               <div class="project-info">
-                <p class="project-title">Questing System</p>
-                <span class="project-tag">C#</span>
-                <span class="project-tag">Unity</span>
+                <p class="project-title">3D Group Game</p>
+                <span class="tag">C#</span>
+                <span class="tag">Unity</span>
+                <div class="relative-links">
+                  <a href="https://github.com/dominic-griffith/CS_596_S22_Griffith_Dominic_PROJ_07" target="_blank"><img class="game-logos" src="images/github-logo.svg" alt="github logo"></a>
+                </div>
               </div>
               <div class="project-about">
-                <p></p>
+                <p>A group project centered around game development. Our first step was to produce a Game Design Document (GDD) that served as the blueprint. The GDD outlined core gameplay mechanics, visual style, audio elements, level design, and storyline. Collaboratively, we brainstormed ideas, prototyped gameplay mechanics, implemented sound effects, and iteratively tested the game. Effective communication, task delegation, and regular team meetings were essential throughout this process.</p>
               </div>
             </div>
 
@@ -311,13 +325,54 @@
               <div class="project-image-container">
                 <img class="project-image terrain" src="images/project-pgt.gif" alt="">
               </div>
+              <div class="project-hover"></div>
               <div class="project-info">
                 <p class="project-title">Procedurally Generated Terrain Editor</p>
-                <span class="project-tag">C#</span>
-                <span class="project-tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">Unity</span>
+                <div class="relative-links">
+                  <a href="https://github.com/dominic-griffith/CS_596_S22_Griffith_Dominic_PROJ_02" target="_blank"><img class="game-logos" src="images/github-logo.svg" alt="github logo"></a>
+                </div>
               </div>
               <div class="project-about">
-                <p></p>
+                <p>This script creates a Terrain Editor object that generates procedural terrains for 3D worlds. The Editor allows you to control the height of hills and dynamically updates the terrain using a variety of functions, including sine and cosine waves, random heights, and Perlin noise. With this tool, you can easily shape and customize terrains to bring your virtual worlds to life.</p>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-image-container">
+                <img class="project-image quest" src="images/project-quest-system.png" alt="">
+              </div>
+              <div class="project-hover"></div>
+              <div class="project-info">
+                <p class="project-title">Questing System</p>
+                <span class="tag">C#</span>
+                <span class="tag">Unity</span>
+                <div class="relative-links">
+                  <a href="https://github.com/dominic-griffith/CS_596_S22_Griffith_Dominic_PROJ_06" target="_blank"><img class="game-logos" src="images/github-logo.svg" alt="github logo"></a>
+                </div>
+              </div>
+              <div class="project-about">
+                <p>A Quest System that implements three quest types: kill, gather, and activate. This system incorporates a range of quest states, such as Pending (not yet able to accept), Unlocked (available but not accepted), Progress (quest in progress), Completed (not yet turned in), Done (successfully turned in), and Canceled (removed).</p>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project-image-container">
+                <img class="project-image screenshot-code" src="images/project-website.png" alt="">
+              </div>
+              <div class="project-hover"></div>
+              <div class="project-info">
+                <p class="project-title">This Website</p>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JS</span>
+                <div class="relative-links">
+                  <a href="https://github.com/dominic-griffith/My_Website" target="_blank"><img class="game-logos" src="images/github-logo.svg" alt="github logo"></a>
+                </div>
+              </div>
+              <div class="project-about">
+                <p>A website built to showcase and share some of my games and projects. By sharing my work on this platform, I invite feedback, discussion, and collaboration from fellow game enthusiasts, industry professionals, and potential collaborators, fostering a sense of community and driving further growth and development in my creative journey.</p>
               </div>
             </div>
 
@@ -325,13 +380,14 @@
               <div class="project-image-container">
                 <img class="project-image screenshot-code" src="images/project-command-line.png" alt="">
               </div>
+              <div class="project-hover"></div>
               <div class="project-info">
                 <p class="project-title">Command Line Interpreter</p>
-                <span class="project-tag">C</span>
-                <span class="project-tag">UNIX</span>
+                <span class="tag">C</span>
+                <span class="tag">UNIX</span>
               </div>
               <div class="project-about">
-                <p>A program written in C for a simple command line interpreter for a UNIX system. It can execute commands and handle I/O redirection. </p>
+                <p>A program written in C for a simple command line interpreter for a UNIX system. It uses lexical analysis to interpret user-entered commands and handle I/O redirection.</p>
               </div>
             </div>
 
@@ -339,13 +395,14 @@
               <div class="project-image-container">
                 <img class="project-image screenshot-code" src="images/project-semaphoric-gym.png" alt="">
               </div>
+              <div class="project-hover"></div>
               <div class="project-info">
                 <p class="project-title">Semaphoric Gym</p>
-                <span class="project-tag">C</span>
-                <span class="project-tag">UNIX</span>
+                <span class="tag">C</span>
+                <span class="tag">UNIX</span>
               </div>
               <div class="project-about">
-                <p></p>
+                <p>This coding assignment provides a simulation to explore the effects of semaphores, concurrent tasks, and shared variables. The assignment revolves around managing a gymnasium where two distinct groups, Joggers and Basketball Shooters, desire to use the facility concurrently. However, it is not permissible for both groups to occupy the gymnasium simultaneously.</p>
               </div>
             </div>
 
@@ -353,38 +410,42 @@
               <div class="project-image-container">
                 <img class="project-image screenshot-code" src="images/project-wordle.png" alt="">
               </div>
+              <div class="project-hover"></div>
               <div class="project-info">
-                <p class="project-title">Wordle</p>
-                <span class="project-tag">C</span>
-                <span class="project-tag">UNIX</span>
+                <p class="project-title">Wordle Helper</p>
+                <span class="tag">C</span>
+                <span class="tag">UNIX</span>
               </div>
               <div class="project-about">
-                <p></p>
+                <p>This program parses command-line parameters and emits possible solutions to a wordle game. The first argument specifies the letters that are present in the target word, while the second argument allows exclusion of specific letters. Additional arguments enable precise location-based filtering, enabling users to define where certain letters are or are not positioned within the word.</p>
               </div>
             </div>
 
             <div class="project">
               <div class="project-image-container">
-                <img class="project-image" src="images/project-wireless-lock-2.png" alt="">
+                <img class="project-image" src="images/project-wireless-lock.png" alt="">
               </div>
+              <div class="project-hover"></div>
               <div class="project-info">
                 <p class="project-title">Wireless Lock</p>
-                <span class="project-tag">C++</span>
+                <span class="tag">C++</span>
+                <div class="relative-links">
+                  <a href="https://www.youtube.com/watch?v=qMu1wjzXEXE" target="_blank"><img class="game-logos" src="images/youtube-logo.svg" alt="youtube logo"></a>
+                </div>
               </div>
               <div class="project-about">
-                <p>A group project focused on a locking system that can detect RFID (radio frequency id) keys up to a maximum range of one inch away. The system keeps a list of authenticated phone number and RFID pairs for two factor authentication.</p> <!-- , which allow for two factor authentication. After scanning an RFID key, the system randomly generates a number and sends it to the coupled phone number. This number needs to be verfied by the system before the user can access the lock.</p> --> 
+                <p>A group project focused on a locking system that can detect RFID (radio frequency id) keys up to a maximum range of one inch away. The system keeps a list of authenticated phone number and RFID pairs for two factor authentication.</p>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
       
 
-      <div class="contact-section">
+      <div id="contact" class="contact-section">
         <h2 class="contact-title">Contact</h2>
+        <a class="contact-text" href="mailto:dominicgriffith15@gmail.com?Subject=Hello!" target="_blank"><p>dominicgriffith15@gmail.com</p></a>
         <div class="contact-content">
-          <a href="mailto:dominicgriffith15@gmail.com?Subject=Hello!" target="_blank"><img class="logos" src="images/mail-logo.svg" alt="mail logo"></a>
           <a href="https://www.linkedin.com/in/dominicgriffith/" target="_blank"><img class="logos" src="images/linkedin-logo.svg" alt="linkedin logo"></a>
           <a href="https://github.com/dominic-griffith" target="_blank"><img class="logos" src="images/github-logo.svg" alt="github logo"></a>
           <a href="https://dominic-griffith.itch.io/" target="_blank"><img class="logos" src="images/itchio-logo.svg" alt="itchio logo"></a>
@@ -392,7 +453,6 @@
         
       </div>
 
-      
     </main>
 
 
@@ -420,6 +480,18 @@
         emptyDivsThumbs[currentFocusIndex].classList.add('focus');
         emptyDivsGames[currentFocusIndex].classList.remove('game-item');
         emptyDivsGames[currentFocusIndex].classList.add('game-item-focus');
+      }
+
+      function scrollToSection(sectionId) {
+        const headerHeight = document.querySelector('header').offsetHeight;
+        const section = document.getElementById(sectionId);
+        if (section) {
+          const sectionTop = section.offsetTop - headerHeight;
+          window.scrollTo({
+            top: sectionTop,
+            behavior: 'smooth'
+          });
+        }
       }
 
       function changeImage(targetID, newScr) { //Changes game image to a screenshot on hover
