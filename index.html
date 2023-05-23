@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="HTML, CSS, JS" />
     <meta name="description" content="My portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dominic Griffith Protfolio</title>
 
@@ -56,7 +57,7 @@
 
               <div class="game-item">
                 <div class="game-picture">
-                  <img id="ascension-main" class="preview-image" src="images/Ascension.png" alt="">
+                  <a href="https://dominic-griffith.itch.io/ascension" target="_blank"><img id="ascension-main" class="preview-image" src="images/Ascension.png" alt=""></a>
                 </div>
                 <div class="game-info">
                   <p class="game-title">Ascension</p>
@@ -94,7 +95,7 @@
 
               <div class="game-item">
                 <div class="game-picture">
-                  <img id="connected-main" class="preview-image" src="images/Connected.png" alt="">
+                  <a href="https://dominic-griffith.itch.io/connected" target="_blank"><img id="connected-main" class="preview-image" src="images/Connected.png" alt=""></a>
                 </div>
                 <div class="game-info">
                   <p class="game-title">Connected</p>
@@ -130,7 +131,7 @@
 
               <div class="game-item">
                 <div class="game-picture">
-                  <img id="perfectfit-main" class="preview-image" src="images/PerfectFit.png" alt="">
+                  <a href="https://dominic-griffith.itch.io/perfect-fit" target="_blank"><img id="perfectfit-main" class="preview-image" src="images/PerfectFit.png" alt=""></a>
                 </div>
                 <div class="game-info">
                   <p class="game-title">Perfect Fit</p>
@@ -168,7 +169,7 @@
 
               <div class="game-item">
                 <div class="game-picture">
-                  <img id="pestilence-main" class="preview-image" src="images/Pestilence.png" alt="">
+                  <a href="https://aztec-game-lab.itch.io/pestilence" target="_blank"><img id="pestilence-main" class="preview-image" src="images/Pestilence.png" alt=""></a>
                 </div>
                 <div class="game-info">
                   <p class="game-title">Pestilence</p>
@@ -206,7 +207,7 @@
 
               <div class="game-item">
                 <div class="game-picture">
-                  <img id="crossfire-main" class="preview-image" src="images/Crossfire.png" alt="">
+                  <a href="https://grahamsanders.itch.io/crossfire-alt-space" target="_blank"><img id="crossfire-main" class="preview-image" src="images/Crossfire.png" alt=""></a>
                 </div>
                 <div class="game-info">
                   <p class="game-title">Cross Fire</p>
@@ -468,6 +469,7 @@
       var rotationInterval;
       emptyDivsGames[currentFocusIndex].classList.remove('game-item');
       emptyDivsGames[currentFocusIndex].classList.add('game-item-focus');
+      var projectHovers = document.querySelectorAll('.project-hover');
 
 
       function rotateFocus(direction) { //Rotates carousel
@@ -524,6 +526,28 @@
 
       leftArrow.addEventListener('click', function() {rotateFocus(-1);})
       rightArrow.addEventListener('click', function() {rotateFocus(1);})
+
+      
+      projectHovers.forEach(function(projectHover) { 
+        //For hover
+        projectHover.addEventListener('mouseenter', function() {
+          this.classList.add('active');
+        });
+
+        projectHover.addEventListener('mouseleave', function() {
+          this.classList.remove('active');
+        });
+        //For mobile touch
+        projectHover.addEventListener('touchstart', function(event) {
+          event.preventDefault();
+          this.classList.add('active');
+        });
+
+        projectHover.addEventListener('touchend', function(event) {
+          event.preventDefault();
+          this.classList.remove('active');
+        });
+      });
     </script>
   </body>
 </html>
